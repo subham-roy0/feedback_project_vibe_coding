@@ -4,10 +4,17 @@
     <title>Feedback Form</title>
 </head>
 <body>
-    <h2>Enter your feedback</h2>
+    <h2>Select your feedback</h2>
     <form action="/save" method="POST">
-        <textarea name="feedback" rows="5" cols="40" placeholder="Type your feedback here..."></textarea><br><br>
-        <input type="submit" value="Save Feedback">
+        <p>Please choose one option:</p>
+        
+        <label><input type="radio" name="feedback" value="good"> Good</label><br>
+        <label><input type="radio" name="feedback" value="great"> Great</label><br>
+        <label><input type="radio" name="feedback" value="bad"> Bad</label><br>
+        <label><input type="radio" name="feedback" value="poor"> Poor</label><br>
+       
+
+        <input type="submit" value="Submit Feedback">
     </form>
 </body>
 </html>
